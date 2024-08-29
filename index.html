@@ -3,45 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paróquia NSC Itatira</title>
+    <title>Saúde - Itatira</title>
 
-    <link rel="stylesheet" href="CSS/style.css"> <!-- Folha de estilos - CSS -->
+    <link rel="stylesheet" href="CSS\style.css"> <!-- Link da folha de estilo - CSS-->
+    <!-- Core css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- /. Core css -->
+
+    <!-- Linkagem de fonts e icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Icons -->
 </head>
 <body>
-    <section class="backgroundInicio">
-        <header id="inicio">
+        <header id="inicio" style="background-image: url(IMG/bgHeader.jpg);">
+            <div class="container-menu" style="background-color: #94C536; text-align: center; ">
+                <div class="container">
+                    <div class="row" id="font-setting-buttons" style="line-height: 30px; display: flex;">
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a href="#altocontraste" id="altocontraste" onclick="window.toggleContrast()" style="cursor:pointer;" accesskey="2" title="Aplicar Contraste"><i class="fa fa-adjust"></i> <span class="nomefora">Contraste</span></a></div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a class="nav-link increase-me btn-list-top" style="cursor:pointer; " accesskey="A" title="Aumentar texto"><i class="fa fa-plus-square-o"></i> <span class="nomefora">Aumentar</span></a></div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a class="nav-link decrease-me btn-list-top" style="cursor:pointer; " accesskey="D" title="Diminuir texto"> <i class="fa fa-minus-square-o"></i> <span class="nomefora">Diminuir</span></a></div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a href="/pesquisa.php"><i class="fa fa-search" title="Pesquisa avançada"></i> <span class="nomefora">Pesquisa</span></a></div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a href="/acessibilidade.php" accesskey="1" title="Página de acessibilidade"><i class="fa fa-smile-o"></i> <span class="nomefora">Acessibilidade</span></a></div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a style="cursor:pointer;" href="https://www.gov.br/governodigital/pt-br/vlibras" target="_blank" accesskey="M" title="VLibras"><i class="fa fa-hand-paper-o"></i> <span class="nomefora">Libras</span></a>
+                        </div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"> <a class="nav-link btn-list-top" href="/mapadosite.php" accesskey="M"><i class="fa fa-sitemap" title="Mapa do site navegue"></i><span class="nomefora"> Mapa do site</span></a></div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a href="/acessoainformacao.php"><i class="fa fa-bars"></i> <span class="nomefora" title="Transparência da entidade">Transparência</span></a></div>
+                    </div>
+                </div>
+            </div>
             <div class="interface">
-                
-                <img src="IMG\logoIgrejaPNG.png" alt="Logo da paróquia">
+                <div class="logo">
+                    <a href="#">
+                        <img src="IMG\logoPrefeitura.png" alt="Logo prefeitura">
+                    </a>
+                </div> <!-- /. Logo-->
 
                 <nav class="menuDesktop">
                     <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">História</a></li>
-                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Programação</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Postos</a></li>
                     </ul>
-                </nav> <!-- /. menuDesktop -->
-
-                <div class="btnDoacao">
-                    <a href="#">
-                        <button>Fazer uma doação</button>
-                    </a>
-                </div> <!-- /. btnDoação -->
+                </nav><!-- /. menuDesktop-->
             </div> <!-- /. interface -->
         </header> <!-- /. inicio -->
-
-        <main class="contentInicio">
-            <section class="topoSite">
-                <div class="flex">
-                    <div class="interface">
-
-                    </div> <!-- /. interface -->
-                </div> <!-- /. flex -->
-            </section> <!-- /. topoSite -->
-        </main> <!-- /. contentInicio -->
-
-
-
-    </section> <!-- /. backgroundInicio -->
 </body>
 </html>

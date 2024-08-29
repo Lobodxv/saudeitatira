@@ -1,7 +1,10 @@
+/* ESTILO GERAL */
 
-    /* ESTILOS GERAIS */
+:root{
+    --spanVerde:#94C536;
+}
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,80 +12,95 @@
 }
 
 body {
+    background-color: #ffffff;
     height: 100vh;
+
 }
 
 button {
     color: #fff;
 }
 
-.interface {
+h2.titulo {
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+}
+h2.titulo span {
+    color: #03e142;
+}
+
+.interface{
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.flex {display: flex;}
-
-a {
-    text-decoration: none;
-}
+.flex{display: flex;}
 
 .backgroundInicio {
-    background-color: rgb(10, 10, 10);
-    height: 100vh;
-    width: 100%;
-    position: fixed;
+    background-image: url(images/backgroundTopo.png); 
+    background-size: cover;
 }
 
-
-/* ESTILO DO CABEÇALHO - Desktop */
-
+/* Estilo do cabeçalho */
 header {
     padding: 20px 4%;
-}
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(178, 178, 178, 0.871) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 2;
 
-header > .interface {   
+    border-bottom: 5px solid var(--spanVerde);
+}
+header > .interface {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
+header .container a {
+    font-size: 16px;
+}
 
-header img {width: 60px;}
-header img:hover {cursor: default;}
+header div.logo > a {
+    font-family: 'Licorice', cursive;
+    color: var(--spanVerde);
+}
+header div.logo a:hover {
+    text-shadow: 0 0 20px #ffffff6c;
+    cursor: default;
+}
 
-header nav ul {list-style-type: none;}
+header a {
+    color: #4f4f4f;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-size: 18px;
+}
+header a:hover{
+    color: #ffffff;
+    transform: scale(1.12);
+    text-shadow: 0 0 60px rgb(0, 0, 0);
+}
 
-header nav ul li {
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li{
     display: inline-block;
     padding: 0 40px;
 }
 
-header a {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 18px;
-    transition: .2s;
-}
-header a:hover {transform: scale(1.06);}
-
-header .btnDoacao button {
-    background-color: rgb(103, 72, 14);
-
+header .btnContato button{
     padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--spanVerde);
     border: 0;
     border-radius: 30px;
-    font-weight: 700;
-    font-size: 18px;
     cursor: pointer;
-    transition: .2s;
 }
-
-header .btnDoacao button:hover {
-    background-color: rgb(56, 39, 9);
-    transform: scale(1.02);
-    transition: .2s;
+header .btnContato button:hover{
+    box-shadow: 0px 0px 15px var(--spanVerde);
 }
-
-
-

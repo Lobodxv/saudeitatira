@@ -27,7 +27,7 @@ h2.titulo {
     color: #fff;
 }
 h2.titulo span {
-    color: #03e142;
+    color: var(--spanVerde);
 }
 
 .interface{
@@ -42,7 +42,7 @@ h2.titulo span {
     background-size: cover;
 }
 
-/* Estilo do cabeçalho */
+/* ESTILO DO CABEÇALHO */
 header {
     padding: 20px 4%;
     background: rgb(255, 255, 255);
@@ -51,6 +51,17 @@ header {
 
     border-bottom: 5px solid var(--spanVerde);
 }
+
+/*  Estilização do container  */
+header .container i {font-size: 12px;}
+header .container a{color: white;}
+header .container a span{font-size: 12px;}
+header .container a:hover{
+    text-shadow: none;
+    transform: scale(1.06);
+}
+/*  /. Estilização do container  */
+
 header > .interface {
     display: flex;
     align-items: center;
@@ -66,12 +77,12 @@ header div.logo > a {
     color: var(--spanVerde);
 }
 header div.logo a:hover {
-    text-shadow: 0 0 20px #ffffff6c;
+    text-shadow: 0 0 20px #464646;
     cursor: default;
 }
 
 header a {
-    color: #4f4f4f;
+    color: #252525;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
@@ -80,7 +91,7 @@ header a {
 header a:hover{
     color: #ffffff;
     transform: scale(1.12);
-    text-shadow: 0 0 60px rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgb(118, 118, 118);
 }
 
 header nav ul {

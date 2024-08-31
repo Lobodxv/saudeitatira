@@ -170,7 +170,7 @@ header .btnContato button:hover{
     overflow: hidden;
     width: 30%;
     margin-bottom: 30px;
-    transition: transform 0.3s;
+    transition: transform .2s;
 }
 
 .evento img {
@@ -195,4 +195,5 @@ header .btnContato button:hover{
 .evento:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }

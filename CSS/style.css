@@ -144,3 +144,55 @@ header nav ul li {   /* Estilização do botão */
 header .btnContato button:hover{
     box-shadow: 0px 0px 15px var(--spanVerde);
 } */
+
+/* Seção de Campanhas e Eventos */
+.campanhas-eventos {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+.campanhas-eventos .titulo {
+    font-size: 36px;
+    color: var(--spanVerde);
+    margin-bottom: 40px;
+}
+
+.eventos-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.evento {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.evento img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.evento h3 {
+    font-size: 24px;
+    color: #333;
+    padding: 15px;
+}
+
+.evento p {
+    font-size: 16px;
+    color: #666;
+    padding: 0 15px 15px;
+    line-height: 1.5;
+}
+
+.evento:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

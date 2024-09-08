@@ -197,3 +197,37 @@ header .btnContato button:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
+
+/* RESPONSIVIDADE DO MENU SUPERIOR*/
+@media (max-width: 768px) {
+    .container-menu .nomefora {
+        display: none;
+    }
+    
+    .container-menu i {
+        font-size: 24px;
+        margin-right: 0;
+    }
+
+    .container-menu div {
+        text-align: center;
+    }
+
+    .container-menu .row {
+        flex-wrap: wrap;
+    }
+
+    .container-menu .row div {
+        margin-bottom: 10px;
+    }
+
+    .menuDesktop {
+        display: none;
+    }
+}
+/* RESPONSIVIDADE DO SEGUNDO MENU*/
+@media (min-width: 768px) {
+    .menuMobile{
+        display: none;
+    }
+}

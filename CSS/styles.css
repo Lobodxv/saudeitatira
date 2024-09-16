@@ -25,7 +25,7 @@ button {
 h2.titulo {
     font-size: 32px;
     text-align: center;
-    color: #fff;
+    color: var(--spanAzul);
 }
 h2.titulo span {
     color: var(--spanVerde);
@@ -53,7 +53,7 @@ header {
     border-bottom: 5px solid var(--spanVerde);
 }
 
-/*  Estilização do container  */
+/*  estilização do container  */
 header .container i {font-size: 12px;}
 header .container a{color: white;}
 header .container a span{font-size: 12px;}
@@ -132,21 +132,10 @@ header nav ul li {   /* Estilização do botão */
     transform: translateY(-1px);
   }
 
-/* header .btnContato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: var(--spanVerde);
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-}
-header .btnContato button:hover{
-    box-shadow: 0px 0px 15px var(--spanVerde);
-} */
+  /* /. ESTILIZAÇÃO DO CABEÇALHO  */
 
 /* Seção de Campanhas e Eventos */
-.campanhas-eventos {
+/* .campanhas-eventos {
     padding: 60px 0;
     background-color: #f7f7f7;
 }
@@ -176,7 +165,6 @@ header .btnContato button:hover{
 .evento img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .evento h3 {
@@ -196,4 +184,4 @@ header .btnContato button:hover{
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-}
+} */

@@ -1,9 +1,65 @@
-.home {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 40px 4%;
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
 }
-.contentText{
-  width: 50%;
+
+.flex{display: flex;}
+
+:root{
+  --spanVerde:#94C536;
+  --spanAzul: #016AAE;
+}
+
+/* Estilo do topo do site */
+
+section.topoSite{
+  padding: 60px 4%;
+  height: 80vh;
+}
+
+section.topoSite .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+main .btnContato button{
+  padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: var(--spanAzul);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.454);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+main .btnContato button:hover{
+  background-color: var(--spanVerde);
+    box-shadow: 0px 15px 20px rgba(151, 183, 34, 0.329);
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+main .btnContato button:active{
+  transform: translateY(-1px);
+}
+
+.topoSite h1{
+  color: var(--spanVerde);
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.topoSite h1 span{
+  color: var(--spanAzul);
+}
+
+.topoSite .txtTopoSite p {
+  color: #000000;
+  margin: 40px 0;
 }

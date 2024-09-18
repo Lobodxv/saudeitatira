@@ -50,7 +50,7 @@ header {
     background: linear-gradient(180deg, rgba(178, 178, 178, 0.871) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 2;
 
-    border-bottom: 5px solid var(--spanVerde);
+    /* border-bottom: 2px solid var(--spanAzul); */
 }
 
 /*  estilização do container  */
@@ -133,6 +133,77 @@ header nav ul li {   /* Estilização do botão */
 
   /* /. ESTILIZAÇÃO DO CABEÇALHO  */
 
+/* ESTILIZAÇÃO DO CARROSSEL  */
+.carrossel {
+    width: 100%;
+    height: 500px;
+    max-width: 1920px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-inner img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+}
+
+.carrossel-control {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+
+    z-index: 1;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carrossel-control.prev {
+    left: 0;
+}
+
+.carrossel-control.next {
+    right: 0;
+}
+
+.carrossel-indicators {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    gap: 10px;
+}
+
+.carrossel-indicator {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    background-color: #fff;
+}
+
+.carrossel-indicator.active {
+    background-color: #9acd32;
+}
+/*  /. ESTILIZAÇÃO DO CARROSSEL  */
+
+
  /* Seção de Campanhas e Eventos */
  .campanhas-eventos {
     padding: 60px 0;
@@ -151,7 +222,7 @@ header nav ul li {   /* Estilização do botão */
     flex-wrap: wrap;
 }
 
-.evento {
+.campanhas-eventos .card {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -161,25 +232,20 @@ header nav ul li {   /* Estilização do botão */
     transition: transform .2s;
 }
 
-.evento img {
-    width: 100%;
-    height: auto;
-}
-
-.evento h3 {
+.campanhas-eventos .card h3 {
     font-size: 24px;
     color: #333;
     padding: 15px;
 }
 
-.evento p {
+.campanhas-eventos .card p {
     font-size: 16px;
     color: #666;
     padding: 0 15px 15px;
     line-height: 1.5;
 }
 
-.evento:hover {
+.campanhas-eventos .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;

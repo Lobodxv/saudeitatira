@@ -1,19 +1,46 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; 
-}
-
-.posto-card img {
+.cards-container {
     width: 100%;
-    height: 200px;
+    padding: 20px;
+}
+
+.card-posto {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.img-container {
+    width: 25%; 
+    margin-right: 15px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%; 
     object-fit: cover;
-    border-bottom: 1px solid #ffff;
+    border-radius: 10px;
+}
+
+.info-container {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-left {
+    width: 65%;
+}
+
+.info-right {
+    width: 30%;
+    text-align: right; 
+}
+
+.info-left p, .info-right p {
+    margin: 5px 0;
 }
